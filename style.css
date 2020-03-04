@@ -11,6 +11,7 @@ html, body{
     padding:0;
     height:100%;
     width:100%;
+    color:#5f6368;
 }
 
 #page_wrapper{
@@ -24,10 +25,11 @@ html, body{
 #header{
     height:100px;
     width:100%;
-    background-color:#e4e4e4;
     line-height:100px;
     font-size:65px;
     text-align:center;
+    background-color:#f2f2f2;
+    border-bottom:1px solid #e4e4e4;
 }
 
 #game{
@@ -35,7 +37,6 @@ html, body{
 }
 
 #game_details{
-    background-color:#ccc;
     height:150px;
     padding-top:15px;
 }
@@ -51,8 +52,6 @@ html, body{
 }
 
 #game_options{
-    background-color:#000;
-    color:#fff;
     height:calc(100% - 150px - 250px);
     display:flex;
     justify-content:space-around;
@@ -72,9 +71,39 @@ html, body{
     width:250px;
 }
 
+#game_options img:hover{
+    cursor:pointer;
+    box-shadow:5px 5px 5px grey;
+    border-radius:38px;
+}
+
 #game_results{
-    background-color:#333;color:#fff;
     height:250px;
+    text-align:center;
+}
+
+#new_game{
+    border:none;
+    height:30px;
+    font-size:20px;
+    border-radius:5px;
+    background-color:#20e6a0;
+}
+
+#new_game:hover{
+    cursor:pointer;
+    box-shadow:3px 3px 5px grey;
+}
+
+#game_results > span{
+        width:250px;
+        background-color:#ccc;
+        display:inline-block;
+        height:30px;
+        line-height:30px;
+        font-size:20px;
+        margin:10px;
+        border-radius:10px;
 }
 
 #footer{
@@ -83,15 +112,18 @@ html, body{
     font-size:14px;
     text-align:center;
     width:100%;
-    background-color:#e4e4e4;
+    background-color:#f2f2f2;
+    border-top:1px solid #e4e4e4;
 }
 
 #footer a:link, #footer a:visited, #footer a:active{
     color:initial;
     text-decoration:none;
+    color:#5f6368;
 }
 
 #footer a:hover{
     text-decoration:underline;
     cursor:pointer;
+    color:#000;
 }
